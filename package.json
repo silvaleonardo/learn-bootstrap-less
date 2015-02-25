@@ -1,0 +1,15 @@
+{
+  "name": "learn-bootstrap-less",
+  "version": "0.0.1",
+  "description": "Learn | Bootstrap with Less",
+  "author": "Leonardo Silva",
+  "private": true,
+  "license": "GPL",
+  "devDependencies": {
+    "bower": "^1.3.12",
+    "grunt": "^0.4.5",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-less": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

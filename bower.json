@@ -1,0 +1,20 @@
+{
+  "name": "learn-bootstrap-less",
+  "version": "0.0.1",
+  "description": "Learn | Bootstrap with Less",
+  "authors": [
+    "Leonardo Silva"
+  ],
+  "private": true,
+  "license": "GPL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2"
+  }
+}
