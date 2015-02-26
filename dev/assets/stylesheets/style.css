@@ -231,7 +231,8 @@ th {
   select {
     background: #fff !important;
   }
-  .navbar {
+  .navbar,
+  .ms-nav {
     display: none;
   }
   .btn > .caret,
@@ -1291,7 +1292,8 @@ mark,
 .text-right {
   text-align: right;
 }
-.text-center {
+.text-center,
+.ms-nav .navbar-collapse {
   text-align: center;
 }
 .text-justify {
@@ -1566,7 +1568,10 @@ pre code {
     width: 1170px;
   }
 }
-.container-fluid {
+.container-fluid,
+.ms-header,
+.ms-container,
+.ms-footer {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -4027,14 +4032,16 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
-.navbar {
+.navbar,
+.ms-nav {
   position: relative;
   min-height: 50px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {
-  .navbar {
+  .navbar,
+  .ms-nav {
     border-radius: 4px;
   }
 }
@@ -4113,7 +4120,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-fixed-top,
-.navbar-fixed-bottom {
+.navbar-fixed-bottom,
+.ms-nav {
   position: fixed;
   right: 0;
   left: 0;
@@ -4121,11 +4129,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-fixed-top,
-  .navbar-fixed-bottom {
+  .navbar-fixed-bottom,
+  .ms-nav {
     border-radius: 0;
   }
 }
-.navbar-fixed-top {
+.navbar-fixed-top,
+.ms-nav {
   top: 0;
   border-width: 0 0 1px;
 }
@@ -4346,7 +4356,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-left {
     float: left !important;
   }
-  .navbar-right {
+  .navbar-right,
+  .ms-nav .nav {
     float: right !important;
     margin-right: -15px;
   }
@@ -6264,7 +6275,15 @@ button.close {
 .panel-body:before,
 .panel-body:after,
 .modal-footer:before,
-.modal-footer:after {
+.modal-footer:after,
+.ms-header:before,
+.ms-header:after,
+.ms-container:before,
+.ms-container:after,
+.ms-footer:before,
+.ms-footer:after,
+.ms-nav:before,
+.ms-nav:after {
   content: " ";
   display: table;
 }
@@ -6282,7 +6301,11 @@ button.close {
 .navbar-collapse:after,
 .pager:after,
 .panel-body:after,
-.modal-footer:after {
+.modal-footer:after,
+.ms-header:after,
+.ms-container:after,
+.ms-footer:after,
+.ms-nav:after {
   clear: both;
 }
 .center-block {
@@ -6528,4 +6551,10 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+body {
+  padding-top: 70px;
+}
+img {
+  max-width: 100%;
 }
