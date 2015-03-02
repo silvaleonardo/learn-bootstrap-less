@@ -1300,7 +1300,11 @@ mark,
 .ms-header,
 #about .box-content .image,
 #services .box-content .item span,
-#services .box-content .item h4 {
+#services .box-content .item h4,
+#portfolio .box-content li,
+#team .box-content .item figure,
+#team .box-content .item h4,
+#team .box-content .item p {
   text-align: center;
 }
 .text-justify,
@@ -1401,7 +1405,8 @@ ul ol,
 ol ol {
   margin-bottom: 0;
 }
-.list-unstyled {
+.list-unstyled,
+#portfolio .box-content ul {
   padding-left: 0;
   list-style: none;
 }
@@ -6720,4 +6725,51 @@ img {
 }
 #services .box-content .item h4 {
   color: #3681c1;
+}
+#portfolio .box-content li {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  #portfolio .box-content li {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  #portfolio .box-content li {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+#team .box-content .item {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  #team .box-content .item {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  #team .box-content .item {
+    float: left;
+    width: 25%;
+  }
+}
+#team .box-content .item h4 {
+  margin-bottom: 0;
 }
