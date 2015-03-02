@@ -1290,7 +1290,8 @@ mark,
 .text-left {
   text-align: left;
 }
-.text-right {
+.text-right,
+.ms-footer .item:last-child {
   text-align: right;
 }
 .text-center,
@@ -1305,7 +1306,8 @@ mark,
 #team .box-content .item figure,
 #team .box-content .item h4,
 #team .box-content .item p,
-#pricing .box-content .item {
+#pricing .box-content .item,
+.ms-footer section:last-child {
   text-align: center;
 }
 .text-justify,
@@ -2686,7 +2688,8 @@ fieldset[disabled] .checkbox label {
   padding-left: 0;
   padding-right: 0;
 }
-.input-sm {
+.input-sm,
+.ms-footer .item form input {
   height: 30px;
   padding: 5px 10px;
   font-size: 12px;
@@ -2977,7 +2980,9 @@ select[multiple].form-group-lg .form-control {
 .btn,
 .ms-header a,
 #pricing .box-content .item a,
-#contact .box-content button {
+#contact .box-content button,
+.ms-footer .item a,
+.ms-footer .item form button {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -3032,7 +3037,8 @@ fieldset[disabled] .btn {
 }
 .btn-default,
 .ms-header a,
-#contact .box-content button {
+#contact .box-content button,
+.ms-footer .item form button {
   color: #333333;
   background-color: #ffffff;
   border-color: #cccccc;
@@ -3303,7 +3309,8 @@ fieldset[disabled] .btn-danger.active {
   color: #d9534f;
   background-color: #ffffff;
 }
-.btn-link {
+.btn-link,
+.ms-footer .item a {
   color: #337ab7;
   font-weight: normal;
   border-radius: 0;
@@ -3312,7 +3319,8 @@ fieldset[disabled] .btn-danger.active {
 .btn-link:active,
 .btn-link.active,
 .btn-link[disabled],
-fieldset[disabled] .btn-link {
+fieldset[disabled] .btn-link,
+.ms-footer .item a {
   background-color: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -3320,7 +3328,8 @@ fieldset[disabled] .btn-link {
 .btn-link,
 .btn-link:hover,
 .btn-link:focus,
-.btn-link:active {
+.btn-link:active,
+.ms-footer .item a {
   border-color: transparent;
 }
 .btn-link:hover,
@@ -3347,7 +3356,8 @@ fieldset[disabled] .btn-link:focus {
 .btn-group-sm > .btn,
 .ms-header a,
 #pricing .box-content .item a,
-#contact .box-content button {
+#contact .box-content button,
+.ms-footer .item form button {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
@@ -6823,4 +6833,43 @@ img {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+}
+.ms-footer {
+  border-top: 1px solid #777777;
+}
+.ms-footer .item {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .ms-footer .item {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .ms-footer .item {
+    float: left;
+    width: 16.66666667%;
+  }
+}
+.ms-footer .item:first-child,
+.ms-footer .item:last-child {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .ms-footer .item:first-child,
+  .ms-footer .item:last-child {
+    float: left;
+    width: 33.33333333%;
+  }
 }

@@ -1,0 +1,43 @@
+// footer
+
+.ms-footer {
+  border-top: 1px solid @gray-light;
+
+  section:last-child {
+    &:extend(.text-center);
+  }
+
+    .item {
+      .make-xs-column(12);
+      .make-sm-column(6);
+      .make-md-column(2);
+      
+      .margin-top-bottom(10px);
+
+      a {
+        &:extend(.btn);
+        &:extend(.btn-link);
+      }
+
+      form {
+        input {
+          &:extend(.input-sm);
+        }
+
+        button {
+          &:extend(.btn);
+          &:extend(.btn-default);
+          &:extend(.btn-sm);
+        }
+      }
+    }
+
+    .item:first-child,
+    .item:last-child {
+      .make-md-column(4);
+    }
+
+    .item:last-child {
+      &:extend(.text-right);
+    }
+}

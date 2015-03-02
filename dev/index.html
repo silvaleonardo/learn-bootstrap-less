@@ -221,17 +221,17 @@
   </section><!-- #contact -->
 
   <footer class="ms-footer" role="contentinfo">
-    <section>
-      <div>
+    <section class="box-content">
+      <div class="item">
         <h4>About</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed orci euismod, sollicitudin ante nec, sagittis quam. Cras at elit.</p>
         <p>
-          Phone: +00 00 0000 0000<br>
-          Fax: +00 00 0000 0000
+          <strong>Phone:</strong> +00 00 0000 0000<br>
+          <strong>Fax:</strong> +00 00 0000 0000
         </p>
-        <p>Email: support@example.com</p>
+        <p><strong>Email:</strong> support@example.com</p>
       </div>
-      <div>
+      <div class="item">
         <h4>Menu</h4>
         <ul>
           <li><a href="#">About</a></li>
@@ -242,7 +242,10 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
-      <div>
+
+      <div class="clearfix visible-sm-block"></div>
+
+      <div class="item">
         <h4>Social</h4>
         <ul>
           <li><a href="#">Linkedin</a></li>
@@ -251,14 +254,16 @@
           <li><a href="#">Youtube</a></li>
         </ul>
       </div>
-      <div>
+      <div class="item">
         <p>Sign up for the newsletter and we'll inform you of updates, offers and more.</p>
-        <input type="text" placeholder="Your email address">
-        <button type="submit">Sign up</button>
+        <form class="form-inline">
+          <input type="text" placeholder="Your email address" class="form-control">
+          <button type="submit">Sign up</button>
+        </form>
       </div>
+    </section>
     <section>
-    <section>
-      Copyright 2015 {Bootstrap Less}. All Rights Reserved.
+      <small>Copyright 2015 {Bootstrap Less}. All Rights Reserved.</small>
     </section>
   </footer><!-- .ms-footer -->
 
