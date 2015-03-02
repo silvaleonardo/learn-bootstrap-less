@@ -1,0 +1,21 @@
+// about
+
+#about {
+  .box-content {
+    .paragraph,
+    .image {
+      .make-xs-column(12);
+    }
+
+    .paragraph,
+    .image {
+      &:extend(.text-justify);
+      .make-sm-column(8);
+    }
+
+    .image {
+      &:extend(.text-center);
+      .make-sm-column(4);
+    }
+  }
+}

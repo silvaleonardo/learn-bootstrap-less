@@ -1,0 +1,46 @@
+// header
+
+.ms-header {
+  &:extend(.text-center);
+
+  position: relative;
+  padding: 50px 0;
+  background: url(../images/business-desktop-imac.jpg) center center no-repeat;
+  background-size: auto 100%;
+
+  @media (min-width: 481px) {
+    .padding-header(481px);
+    background-size: 100%;
+  }
+
+  @media (min-width: @screen-sm-min) {
+    .padding-header(768px);
+  }
+
+  @media (min-width: @screen-md-min) {
+    .padding-header(992px);
+  }
+
+  @media (min-width: @screen-lg-min) {
+    .padding-header(1200px);
+  }
+
+
+  h1,
+  h2 small,
+  p {
+    color: @gray-lighter;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  a {
+    &:extend(.btn);
+    &:extend(.btn-default);
+    &:extend(.btn-sm);
+
+    margin-top: 10px;
+  }
+}

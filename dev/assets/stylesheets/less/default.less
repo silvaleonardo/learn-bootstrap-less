@@ -1,15 +1,42 @@
 // default
 
 body {
-	padding-top: 70px;
+	padding-top: 50px;
 }
 
 img {
 	max-width: 100%;
 }
 
-.ms-header,
-.ms-container,
-.ms-footer {
-	&:extend(.container-fluid);
+#wrapper {
+  .clearfix;
 }
+
+  .ms-container,
+  .ms-footer {
+  	&:extend(.container);
+
+    .margin-top-bottom(20px);
+  }
+
+    .box-title {
+      margin: 10px 0;
+
+      h2 {
+        &:extend(.text-center);
+
+        color: @brand-primary;
+      }
+
+      h3 {
+        &:extend(.text-center);
+
+        color: darken(@primary-color, 4%);
+      }
+    }
+
+    .box-content {
+      .make-row();
+
+      .margin-top-bottom(15px);
+    }
