@@ -1,0 +1,34 @@
+// pricing
+
+#pricing {
+  .box-content {
+    .item {
+      &:extend(.text-center);
+      .make-xs-column(12);
+      .make-sm-column(3);
+      .make-sm-column-offset(0.5);
+      .make-sm-column-push(0.5);
+
+      .margin-top-bottom(10px);
+      
+      padding-top: 10px;
+      padding-bottom: 20px;
+      border-radius: 10px;
+      background-color: @gray-lighter;
+
+      ul {
+        &:extend(.list-group);
+      }
+
+        li {
+          &:extend(.list-group-item);
+        }
+
+      a {
+        &:extend(.btn);
+        &:extend(.btn-success);
+        &:extend(.btn-sm);
+      }
+    }
+  }
+}

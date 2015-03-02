@@ -151,14 +151,14 @@
   </section><!-- #team -->
 
   <section class="ms-container" id="pricing">
-    <div>
+    <div class="box-title">
       <h2>Pricing</h2>
       <h3>Pricing plans for personal and commercial projects.</h3>
     </div>
-    <div>
-      <div>
-        <h2>Starter</h2>
-        <h3>$10/mo</h3>
+    <div class="box-content">
+      <div class="item">
+        <h3>Starter</h3>
+        <h4>$10/mo</h4>
         <ul>
           <li>Lorem ipsum dolor sit amet.</li>
           <li>Lorem ipsum dolor sit amet.</li>
@@ -167,9 +167,9 @@
         </ul>
         <a href="#">Purchase</a>
       </div>
-      <div>
-        <h2>Basic</h2>
-        <h3>$20/mo</h3>
+      <div class="item">
+        <h3>Basic</h3>
+        <h4>$20/mo</h4>
         <ul>
           <li>Lorem ipsum dolor sit amet.</li>
           <li>Lorem ipsum dolor sit amet.</li>
@@ -178,9 +178,9 @@
         </ul>
         <a href="#">Purchase</a>
       </div>
-      <div>
-        <h2>Premium</h2>
-        <h3>$30/mo</h3>
+      <div class="item">
+        <h3>Premium</h3>
+        <h4>$30/mo</h4>
         <ul>
           <li>Lorem ipsum dolor sit amet.</li>
           <li>Lorem ipsum dolor sit amet.</li>
@@ -193,16 +193,28 @@
   </section><!-- #pricing -->
 
   <section class="ms-container" id="contact">
-    <div>
+    <div class="box-title">
       <h2>Contact</h2>
       <h3>Still Got Any Questions?</h3>
     </div>
-    <div>
+    <div class="box-content">
       <form>
-        <label for="name">Name:</label><input type="text" name="name">
-        <label for="email">Email:</label><input type="text" name="email">
-        <label for="phone">Phone:</label><input type="text" name="phone">
-        <label for="message">Message:</label><textarea name="message"></textarea>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" name="name" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="text" name="email" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="text" name="phone" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea name="message" rows="5" class="form-control"></textarea>
+        </div>
         <button type="submit">Send</button>
       </form>
     </div>
