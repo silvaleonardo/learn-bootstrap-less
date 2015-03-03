@@ -6598,7 +6598,7 @@ button.close {
 body {
   padding-top: 50px;
 }
-img {
+body img {
   max-width: 100%;
 }
 #wrapper:before,
