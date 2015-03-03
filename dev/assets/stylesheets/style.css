@@ -1295,8 +1295,8 @@ mark,
   text-align: right;
 }
 .text-center,
-.box-title h2,
-.box-title h3,
+#wrapper .box-title h2,
+#wrapper .box-title h3,
 .ms-nav .navbar-collapse,
 .ms-header,
 #about .box-content .image,
@@ -1566,8 +1566,8 @@ pre code {
   overflow-y: scroll;
 }
 .container,
-.ms-container,
-.ms-footer {
+#wrapper .ms-container,
+#wrapper .ms-footer {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -1575,22 +1575,22 @@ pre code {
 }
 @media (min-width: 768px) {
   .container,
-  .ms-container,
-  .ms-footer {
+  #wrapper .ms-container,
+  #wrapper .ms-footer {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
   .container,
-  .ms-container,
-  .ms-footer {
+  #wrapper .ms-container,
+  #wrapper .ms-footer {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
   .container,
-  .ms-container,
-  .ms-footer {
+  #wrapper .ms-container,
+  #wrapper .ms-footer {
     width: 1170px;
   }
 }
@@ -6318,12 +6318,12 @@ button.close {
 .panel-body:after,
 .modal-footer:before,
 .modal-footer:after,
-.box-content:before,
-.box-content:after,
-.ms-container:before,
-.ms-container:after,
-.ms-footer:before,
-.ms-footer:after,
+#wrapper .box-content:before,
+#wrapper .box-content:after,
+#wrapper .ms-container:before,
+#wrapper .ms-container:after,
+#wrapper .ms-footer:before,
+#wrapper .ms-footer:after,
 .ms-nav:before,
 .ms-nav:after {
   content: " ";
@@ -6344,9 +6344,9 @@ button.close {
 .pager:after,
 .panel-body:after,
 .modal-footer:after,
-.box-content:after,
-.ms-container:after,
-.ms-footer:after,
+#wrapper .box-content:after,
+#wrapper .ms-container:after,
+#wrapper .ms-footer:after,
 .ms-nav:after {
   clear: both;
 }
@@ -6617,21 +6617,21 @@ img {
 #wrapper:after {
   clear: both;
 }
-.ms-container,
-.ms-footer {
+#wrapper .ms-container,
+#wrapper .ms-footer {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.box-title {
+#wrapper .box-title {
   margin: 10px 0;
 }
-.box-title h2 {
+#wrapper .box-title h2 {
   color: #337ab7;
 }
-.box-title h3 {
+#wrapper .box-title h3 {
   color: #3681c1;
 }
-.box-content {
+#wrapper .box-content {
   margin-left: -15px;
   margin-right: -15px;
   margin-top: 15px;
